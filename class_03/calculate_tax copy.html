@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function numberOfD() {
+            const numberOfDiner = document.getElementById("numofdiner").value;
+            
+            console.log(numberOfDiner);
+            
+            console.log(Number.isInteger(numberOfDiner));
+            
+            /*
+            if ( numberOfDiner <= 0 || !Number.isInteger(numberOfDiner) ) {
+                console.log("Number of diners should be a positive integer.");
+                return;
+            }
+            console.log(`Number of diner is : ${numberOfDiner}`);
+            */
+        }
+    </script>
+</head>
+<body>
+    <label for="numofdiner">Enter number Of Diner</label>
+    <input type="text" id="numofdiner">
+    <button onclick="numberOfD()">ss</button>
+</body>
+</html>
