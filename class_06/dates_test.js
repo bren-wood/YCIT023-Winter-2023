@@ -1,0 +1,12 @@
+const {format} = require('date-fns');
+const date = new Date();
+console.log(date);
+console.log(`${format(date, 'dd.MM.yyyy')}`);
+console.log(`${format(date, 'yyyy-MM-dd').toString()}`);
+console.log(`today is ${format(date, 'EEEE, MMMM yyyy')}`);
+console.log(`today is  ${format(date, 'EEEE,MMMM do, yyyy hh:mm a')}`);
+console.log(`Today's date: ${format(date, 'MMMM, yyyy')}`);
+console.log(`Today's date: ${format(date, 'MMMM.do.')}`);
+console.log(`Today's date: ${format(date, 'EEEE do HH:mm ')}`);
+console.log(`${format(date, 'EEEE,MMMM do, yyyy ppppp')}`);
+console.log(`${format(date, 'do  MMMM yyyy OOOO')}`);
